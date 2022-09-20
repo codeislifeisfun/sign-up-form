@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-left">
+        <img src="mayon.jpg" alt="mayon at night" srcset="">
+        <div class="logo">
+
+        </div>
+        <div class="credit">
+
+        </div>
+    </div>
+    <div class="container-right">
+        <div class="message">
+            <p>This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            <br>Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form">
+            <h4>Let's do this!</h3>
+            <form action="#" onsubmit="return confirmPassword(this)">
+                <div class="grid">
+                    <entry>
+                        <label for="first_name">FIRST NAME*</label><br>
+                        <input type="text" name="first_name" id="first_name" placeholder="example: john" required minlength="2" title="first name needs a minimum of 2 characters">
+                    </entry>
+                    <entry>
+                        <label for="last_name">LAST NAME*</label><br>
+                        <input type="text" name="last_name" id="last_name" placeholder="example: doe" required minlength="2" title="last name needs a minimum of 2 characters">
+                    </entry>
+                    <entry>
+                        <label for="email">EMAIL*</label><br>
+                        <input type="email" name="email" id="email" placeholder="example: john.doe@email.com" required title="please enter a valid email, example: john.doe@email.com">
+                    </entry>
+                    <entry>
+                        <label for="phone_number">PHONE NUMBER</label><br>
+                        <input type="tel" name="phone_number" id="phone_number" placeholder="7 to 11 digits" pattern="[0-9]{7,11}" title="please enter a valid 7 to 11 digits phone number">
+                    </entry>
+                    <entry>
+                        <label for="password">PASSWORD*</label><br>
+                        <input type="password" name="password" id="password" required>
+                    </entry>
+                    <entry>
+                        <label for="confirm">CONFIRM PASSWORD*</label><br>
+                        <input type="password" name="confirm" id="confirm" required>
+                        <p id="password_error"></p>
+                    </entry>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+    <script src="sign-up-form.js"></script>
+</body>
+</html>
